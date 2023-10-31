@@ -1,4 +1,4 @@
-package com.example.bookstore.service;
+package com.example.bookstore.service.impl;
 
 import com.example.bookstore.dto.UserRegistrationRequestDto;
 import com.example.bookstore.dto.UserResponseDto;
@@ -9,6 +9,8 @@ import com.example.bookstore.model.Role;
 import com.example.bookstore.model.User;
 import com.example.bookstore.repository.RoleRepository;
 import com.example.bookstore.repository.UserRepository;
+import com.example.bookstore.service.ShoppingCartService;
+import com.example.bookstore.service.UserService;
 import java.util.Set;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,4 +1,4 @@
-package com.example.bookstore.service;
+package com.example.bookstore.service.impl;
 
 import com.example.bookstore.dto.CartItemRequestDto;
 import com.example.bookstore.dto.ShoppingCartResponseDto;
@@ -11,6 +11,7 @@ import com.example.bookstore.model.ShoppingCart;
 import com.example.bookstore.model.User;
 import com.example.bookstore.repository.CartItemRepository;
 import com.example.bookstore.repository.ShoppingCartRepository;
+import com.example.bookstore.service.ShoppingCartService;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
