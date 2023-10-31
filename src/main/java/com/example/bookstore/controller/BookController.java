@@ -51,7 +51,7 @@ public class BookController {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     @Operation(summary = "Update a book by id")
     public BookDto update(@PathVariable Long id, @RequestBody @Valid CreateBookRequestDto
             bookRequestDto) {
@@ -59,7 +59,7 @@ public class BookController {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     @Operation(summary = "Delete a book by id")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id) {
