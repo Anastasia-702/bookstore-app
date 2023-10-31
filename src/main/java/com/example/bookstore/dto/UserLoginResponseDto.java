@@ -1,12 +1,12 @@
 package com.example.bookstore.dto;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@AllArgsConstructor
+@Getter
+@Setter
 public class UserLoginResponseDto {
     private final String token;
-
-    public UserLoginResponseDto(String token) {
-        this.token = token;
-    }
 }

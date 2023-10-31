@@ -1,9 +1,11 @@
 package com.example.bookstore.dto;
 
 import java.math.BigDecimal;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 public class BookDtoWithoutCategoryIds {
     private Long id;
     private String title;
